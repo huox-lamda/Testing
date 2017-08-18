@@ -1,0 +1,47 @@
+\documentclass[sigconf]{acmart}
+
+%Testing Now
+\usepackage{booktabs} % For formal tables
+\usepackage{multirow}
+\usepackage[american]{babel}
+\usepackage{color}
+
+
+\newcommand{\dl}[1]{\textcolor{blue}{{David says: {#1}}}}
+\newcommand{\ml}[1]{\textcolor{red}{{Ming says: {#1}}}}
+\newcommand{\xh}[1]{\textcolor{brown}{{Xuan says: {#1}}}}
+\newcommand{\ft}[1]{\textcolor{green}{{Ferdian says: {#1}}}}
+
+\begin{document}
+\title{Deep Transfer Bug Localization}
+
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec.intro}
+\input{intro}
+
+\section{Background}\label{sec.background}
+\input{background}
+
+\section{Proposed Approach}\label{sec.approach}
+\input{approach}
+
+\section{Experiments}\label{sec.exp}
+\input{exp}
+
+\section{Discussion}\label{sec.discuss}
+\input{discuss}
+
+\section{Related Work}\label{sec.related}
+\input{relatedwork}
+
+\section{Conclusion and Future Work}\label{sec.conclusion}
+\input{conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ICSE18}
+
+\end{document}

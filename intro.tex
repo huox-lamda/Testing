@@ -1,0 +1,33 @@
+%Problem with Bug, Need for bug localization
+An active software project often receives numerous bug reports daily~\cite{AnvikHM05}. To resolve each report, developers often need to spend much time and effort~\cite{Tassey02}. One main task that developers need to do during debugging is to identify code that needs to be fixed to resolve the bug. This task, often referred to as {\em bug localization}, is a non-trivial one as relevant files need to be identified out of a collection of hundreds or even thousands of files.
+
+%Existing work on bug localization, Recent trend on supervised bug localization (IJCAI16,17)
+To help developers in locating bugs, various automated solutions have been proposed~\cite{JonesH05,lukins2008source,RaoK11,SahaLKP14,rao2013incremental,huo2016learning}. Many of them analyze the description of a bug report to identify source code files relevant to it~\cite{lukins2008source,RaoK11,SahaLKP14,rao2013incremental,huo2016learning}. These text-based solutions can be further divided into two families: unsupervised and supervised. Unsupervised solutions, which were historically proposed first, typically employ information retrieval techniques to identify files that contain many of the words that appear in the bug report~\cite{lukins2008source,RaoK11,SahaLKP14,rao2013incremental}. More recently, supervised approaches are introduced~\cite{huo2016learning}. These approaches use a collection of bug reports and their relevant source code files as training data. This data is then used to learn a good model that can map new bug reports to their respective relevant source code files. Supervised approaches have been shown to be superior than unsupervised ones.
+
+%Limitation with supervised - cold start problem, no data.
+One limitation of a supervised approach is the need for sufficient good quality training data. Insufficient or low quality data can be detrimental to its effectiveness. This problem is particularly important when a bug localization approach needs to be applied to new projects with limited bug fixing history. Unfortunately, this issue, often referred to as the {\em cold-start problem}, has not been explored much by past supervised bug localization studies.
+
+%Our approach
+To address the above mentioned limitation, in this work we propose {\em Deep Transfer Bug Localization} (DTBL). DBTL deals with cold-start problem affecting a target software project by adapting data from other projects. DTBL, the first cross-project bug localization solution, combines deep and transfer learning to address the cold-start problem. \dl{Please add brief description of the approach.}
+
+%Novelty over prior work (TCA+, etc.)
+There have been a number of transfer learning solutions designed to help with cold-start problem in software engineering context. For example, .... Our approach is unique from previous solutions in the following ways. First, ... \dl{Please compare the approach with existing work and highlight its novelty.}
+
+%Experiment results
+We have evaluated our proposed solution on ... The experiment results first highlight the need for DBTL as existing solutions cannot effectively make use of data from other projects to create a model that can accurately locate bug in a target project (given a bug report). ... dl{Please add brief description of the results.}
+
+%List of contributions
+Our contributions are as follows:
+
+\begin{enumerate}
+
+\item We present a new direction of research on cross-project bug localization. We highlight that existing supervised bug localization techniques are not able to perform well when they are are trained using data from other projects. 
+    
+\item We propose a deep transfer learning solution that .... \dl{Please add very brief description of the approach highlighting its novelty.}
+
+\item We have evaluated our proposed approach on ... The results show that ... \dl{Please add very brief description of the results.}
+
+\end{enumerate}
+
+%Structure of the paper
+The structure of the remainder of this paper is as follows. In Section~\ref{sec.background} we summarize the state-of-the-art work on supervised bug localization that our approach builds upon. We elaborate the details of our approach in Section~\ref{sec.approach}. The results of the evaluation of the approach are presented in Section~\ref{sec.exp}. We discuss pertinent points and threats to validity in Section~\ref{sec.discuss}. We describe related work in Section~\ref{sec.related}, before concluding and mentioning future work in Section~\ref{sec.conclusion}. 

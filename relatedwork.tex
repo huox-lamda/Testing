@@ -1,0 +1,23 @@
+In this section, we first describe existing work on bug localization in Section~\ref{sec.bugloc}. Next, we present existing work that also deal with cold-start problem in software engineering in Section~\ref{sec.crossproj}. Finally, we describe recent effort in software engineering that adapts deep learning to software engineering.
+
+\subsection{Bug Localization}\label{sec.bugloc}
+
+\dl{Ferdian, please identify more related papers and provide their descriptions below. Please also classify the approach into supervised and unsupervised.}
+
+A number of papers have proposed various techniques that take as input a bug report and return a ranked list of source code files that are relevant to it~\cite{lukins2008source,RaoK11,SahaLKP14,rao2013incremental,huo2016learning}. These {\em text-based} bug localization techniques can be divided into two general families: supervised approaches~\cite{huo2016learning} and unsupervised ones~\cite{rao2013incremental}. Supervised approaches learn a model from data of bug reports whose relevant buggy source code files have been identified. Unsupervised approaches do not learn such model. We briefly introduce approaches that belong to each family below.
+
+\vspace{0.2cm}\noindent{\bf Unsupervised Approaches.}
+
+\vspace{0.2cm}\noindent{\bf Supervised Approaches.}
+
+\subsection{Cross-Project Learning}\label{sec.crossproj}
+
+The problem of scarcity of labelled data for a target project (aka. cold-start problem) has been explored in several automated software engineering tasks. In particular, there is a substantial body of work on cross-project defect prediction; it addresses cold-start problem for a different task than the one considered in this work. We provide a description of existing work on cross-project defect prediction below. Note that defect prediction does not consider a target bug report, while bug localization takes as input a bug report and return files relevant to it. They are used in different software development phase, i.e., code inspection and testing (defect prediction) vs. debugging (bug localization), and thus are complementary with each other.
+
+\dl{Ferdian, please include some existing work on cross-project defect prediction. One recent work by our group is~\cite{XiaLPNW16}.}
+
+\subsection{Deep Learning in Software Engineering}\label{sec.deeplearning}
+
+Recently, deep learning~\cite{Goodfellow-et-al-2016}, which is a recent breakthrough in machine learning domain, has been applied in many areas. Software engineering is not an exception. Our approach also employs deep learning. Thus, we review related studies that also employ deep learning to improve automated software engineering. In the process, we highlight the difference between our approach and the existing work, and thus stress our novelty.
+
+\dl{Ferdian, please include some existing work on deep learning in SE. Some recent work include the following: \cite{WangLT16},~\cite{YangLXZS15},~\cite{0004CC17},~\cite{LeeHLKJ17},~\cite{XuYXXCL16}}.
